@@ -55,9 +55,29 @@ body {
                     align-items: center;
                     justify-content: end;
                 }
-                .row1-col2-row1-col7 {
-                    display: none;
-                }
+
+            }
+        }
+
+        .row1-col3 {
+            display: none;
+        }
+    }
+}
+
+@media  (max-width: 768px) {
+    .container1 {
+        .row1 {
+            .row1-col2 {
+                display: none;
+            }
+
+            .row1-col3 {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                border: solid saddlebrown;
+                
             }
         }
     }
