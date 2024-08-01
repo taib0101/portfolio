@@ -96,13 +96,14 @@ body {
     }
 }
 
+/* hamburger toggle menu */
 .container2 {
     .row1 {
 
         .row1-col1 {
             position: fixed;
             top: 0;
-            left: 0;
+            right: -10000px;
             border: solid darkred 5px;
             height: 100dvh;
             z-index: 3;
@@ -119,19 +120,43 @@ body {
                     .row1-col1-row1-col1-row1 {
                         justify-content: end;
                         position: relative;
+                        border: solid wheat;
+                        height: 20%;
 
                         .row1-col1-row1-col1-row1-col1 {
                             color: chartreuse;
                             cursor: pointer;
                             border: solid salmon;
                             width: max-content;
+                            height: max-content;
                             position: relative;
                             top: 12px;
                         }
                     }
 
                     .row1-col1-row1-col1-row2 {
-                        
+                        justify-content: center;
+                        height: 80%;
+                        border: solid;
+                        align-items: center;
+                        .row1-col1-row1-col1-row2-col1 {
+                            border: dashed wheat;
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+
+
+                            flex-direction: column;
+                            li {
+                                list-style-type: none;
+                                margin-top: 12%;
+                            }
+                            
+                            li a {
+                                text-decoration: none;
+                                color: chartreuse;
+                            }   
+                        }
                     }
                 }
             }

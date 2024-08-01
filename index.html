@@ -33,7 +33,7 @@
             </div>
 
             <!-- media query hamburger menu -->
-            <div class="col-8 row1-col3">
+            <div id="hamburgerDisplayOpen" class="col-8 row1-col3">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
@@ -42,22 +42,25 @@
 
     <!-- hamburger button toogle -->
     <div class="container-fluid container2">
-        <div class="row row1">
-            <div class="col-12 row1-col1">
+        <div class="row row1 hamburgerMenu">
+            <div id="hamburgerDisplayParent" class="col-12 row1-col1">
                 <div class="row row1-col1-row1">
-                    <div class="col-6 col-md-5 row1-col1-row1-col1">
-                        <div class="row row1-col1-row1-col1-row1">
+                    <div id="hamburgerDisplayChild" class="col-6 col-md-5 row1-col1-row1-col1">
+                        <div id="hamburgerDisplayClose" class="row row1-col1-row1-col1-row1">
                             <div class="col-1 row1-col1-row1-col1-row1-col1">
                                 <i class="fa-solid fa-xmark"></i>
                             </div>
                         </div>
 
                         <div class="row row1-col1-row1-col1-row2">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Resume</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Contact</a></li>
+                            <div class="col-6 row1-col1-row1-col1-row2-col1">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Resume</a></li>
+                                <li><a href="">Projects</a></li>
+                                <li><a href="">Contact</a></li>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,5 +80,5 @@
 </body>
 <script src="cmatrix.js"></script>
 <script src="https://kit.fontawesome.com/1fe9a2c7df.js" crossorigin="anonymous"></script>
-
+<script src="toggler.js"></script>
 </html>
