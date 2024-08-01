@@ -10,6 +10,7 @@ hamburgerDisplayOpen.addEventListener("click" , (event) => {
 });
 
 hamburgerDisplayParent.addEventListener("click" , (event) => {
+    event.stopPropagation();
     hamburgerDisplayParent.style.right = "-10000px";
 });
 

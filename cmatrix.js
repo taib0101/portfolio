@@ -10,7 +10,7 @@ var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNO
 letters = letters.split('');
 
 // Setting up the columns
-var fontSize = 10,
+var fontSize = 12,
     columns = canvas.width / fontSize;
 
 // Setting up the drops
@@ -29,7 +29,7 @@ function draw() {
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
         drops[i]++;
         if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
-            drops[i] = 0;
+            drops[i] = -10;
         }
     }
 }
