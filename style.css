@@ -9,6 +9,7 @@ html {
     /* height: max-content; */
     overflow: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 /* navbar */
 .container1 {
     position: fixed;
-    border: solid red 10px;
+    /* border: solid red 10px; */
     height: 12dvh;
     z-index: 1;
 
@@ -35,17 +36,17 @@ body {
 
         /* nav-brand */
         .row1-col1 {
-            border: solid saddlebrown;
+            /* border: solid saddlebrown; */
             display: flex;
             align-items: center;
         }
 
         /* navber-menu */
         .row1-col2 {
-            border: solid saddlebrown;
+            /* border: solid saddlebrown; */
 
             .row1-col2-row1 {
-                border: dashed darkblue;
+                /* border: dashed darkblue; */
                 height: 100%;
 
                 .row1-col2-row1-col1,
@@ -54,7 +55,7 @@ body {
                 .row1-col2-row1-col4,
                 .row1-col2-row1-col5,
                 .row1-col2-row1-col6 {
-                    border: solid darkmagenta;
+                    /* border: solid darkmagenta; */
                     height: 100%;
                     display: flex;
                     align-items: center;
@@ -85,7 +86,7 @@ body {
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                border: solid saddlebrown;
+                /* border: solid saddlebrown; */
 
                 .fa-solid {
                     color: chartreuse;
@@ -99,34 +100,33 @@ body {
 /* hamburger toggle menu */
 .container2 {
     .row1 {
-
         .row1-col1 {
             position: fixed;
             top: 0;
             right: -10000px;
-            border: solid darkred 5px;
+            /* border: solid darkred 5px; */
             height: 100dvh;
             z-index: 3;
 
             .row1-col1-row1 {
                 height: 100%;
-                border: dashed darkcyan;
+                /* border: dashed darkcyan; */
                 justify-content: end;
 
                 .row1-col1-row1-col1 {
                     border: solid wheat;
-                    height: 300px;
+                    height: max-content;
 
                     .row1-col1-row1-col1-row1 {
                         justify-content: end;
                         position: relative;
                         border: solid wheat;
-                        height: 20%;
+                        height: 60px;
 
                         .row1-col1-row1-col1-row1-col1 {
                             color: chartreuse;
                             cursor: pointer;
-                            border: solid salmon;
+                            /* border: solid salmon; */
                             width: max-content;
                             height: max-content;
                             position: relative;
@@ -136,13 +136,13 @@ body {
 
                     .row1-col1-row1-col1-row2 {
                         justify-content: center;
-                        height: 80%;
-                        border: solid;
-                        align-items: center;
+                        /* height: 80%; */
+                        /* border: solid; */
                         .row1-col1-row1-col1-row2-col1 {
-                            border: dashed wheat;
+                            border: solid wheat;
                             display: flex;
                             align-items: center;
+                            width: 100%;
                             height: 100%;
 
 
@@ -166,19 +166,57 @@ body {
 
 .container3 {
     height: 200dvh;
-    border: solid blue 5px;
+    /* border: solid blue 5px; */
     position: relative;
 
     .row1 {
         height: 100%;
-        border: solid 5px orange;
+        /* border: solid 5px orange; */
 
         .row1-col1 {
-            border: dashed red 5px;
+            /* border: dashed red 5px; */
             height: 100%;
             margin: 0;
             padding: 0;
         }
+    }
 
+    .row2 {
+        border: solid white;
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        .row2-col1 {
+            border: solid white;
+            position: absolute;
+            top: 38%;
+            height: 50%;
+            width: 50%;
+            .one {
+                color: chartreuse;
+                font-size: larger;
+                font-weight: bold;
+            }
+            .two {
+                display: inline-block;
+                color: white;
+                font-size: larger;
+                font-weight: bold;
+            }
+            .three {
+                display: inline-block;
+            }
+        }
+
+        .row2-col2 {
+            border: dashed red;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            height: 50%;
+        }
     }
 }
