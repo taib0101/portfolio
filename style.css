@@ -17,25 +17,30 @@ body {
     /* border: solid 10px; */
 }
 
+/* navbar */
 .container1 {
     position: fixed;
     border: solid red 10px;
     height: 12dvh;
     z-index: 1;
+
     .row1 {
         border: dashed darksalmon;
         height: 100%;
+
         a {
             color: chartreuse;
             text-decoration: none;
         }
 
+        /* nav-brand */
         .row1-col1 {
             border: solid saddlebrown;
             display: flex;
             align-items: center;
         }
 
+        /* navber-menu */
         .row1-col2 {
             border: solid saddlebrown;
 
@@ -59,37 +64,90 @@ body {
             }
         }
 
+        /* hamburger menu */
         .row1-col3 {
             display: none;
         }
     }
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 991px) {
     .container1 {
         .row1 {
+
+            /* navber-menu */
             .row1-col2 {
                 display: none;
             }
 
+            /* hamburger menu */
             .row1-col3 {
                 display: flex;
                 justify-content: end;
                 align-items: center;
                 border: solid saddlebrown;
-                
+
+                .fa-solid {
+                    color: chartreuse;
+                    cursor: pointer;
+                }
             }
         }
     }
 }
 
 .container2 {
+    .row1 {
+
+        .row1-col1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            border: solid darkred 5px;
+            height: 100dvh;
+            z-index: 3;
+
+            .row1-col1-row1 {
+                height: 100%;
+                border: dashed darkcyan;
+                justify-content: end;
+
+                .row1-col1-row1-col1 {
+                    border: solid wheat;
+                    height: 300px;
+
+                    .row1-col1-row1-col1-row1 {
+                        justify-content: end;
+                        position: relative;
+
+                        .row1-col1-row1-col1-row1-col1 {
+                            color: chartreuse;
+                            cursor: pointer;
+                            border: solid salmon;
+                            width: max-content;
+                            position: relative;
+                            top: 12px;
+                        }
+                    }
+
+                    .row1-col1-row1-col1-row2 {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container3 {
     height: 200dvh;
     border: solid blue 5px;
     position: relative;
+
     .row1 {
         height: 100%;
         border: solid 5px orange;
+
         .row1-col1 {
             border: dashed red 5px;
             height: 100%;
