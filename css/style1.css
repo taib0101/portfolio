@@ -19,7 +19,7 @@ body {
 }
 
 :root {
-    --matrix: chartreuse;
+    --matrix: rgb(21, 255, 0);
 }
 
 /* navbar */

@@ -81,14 +81,14 @@
         <div class="row row2">
             <div class="col-12 row2-col1 px-4 px-md-5 lh-2">
                 <div>
-                    <p class="h5" style="color: rgb(21, 255, 0);font-weight: bolder;">Hello,</p>
+                    <p class="h5" style="color: chartreuse;font-weight: bolder;">Hello,</p>
                 </div>
                 <div>
                     <p class="h1" style="color: white;display: inline-block;font-weight: bolder;">I'm </p>&nbsp;
-                    <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">Mustain Murtaza Taib</p>
+                    <p class="h1" style="color: chartreuse;display: inline-block;font-weight: bolder;">Mustain Murtaza Taib</p>
                 </div>
                 <div>
-                    <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">$</p>
+                    <p class="h1" style="color: chartreuse;display: inline-block;font-weight: bolder;">$</p>
                     <span class="h1" id="typingAnimation" style="color: white;display: inline-block;font-weight: bolder;"></span>
                 </div>
                 <div class="row row2-col1-row1 px-4 px-md-5">
