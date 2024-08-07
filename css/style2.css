@@ -1,0 +1,78 @@
+:root {
+    --background: #0a0908;
+    --matrix: #38b000;
+}
+
+.container4 {
+    height: max-content;
+    /* border: solid white; */
+    .row1 {
+        height: max-content;
+        background-color: var(--background);
+        /* border: var(--matrix) solid 10px; */
+        padding-top: 5%;
+        .row1-col1 {
+            height: max-content;
+            padding-top: 5%;
+            /* border-right: var(--matrix) solid 5px; */
+            p,a {
+                color: var(--matrix);
+            }
+            .row1-col1-row1 {
+                height: max-content;
+                /* .row1-col1-row1-col1 {
+                    border: dashed white;
+                } */
+                .details {
+                    text-align: center;
+                    margin-bottom: 6%;
+                }
+                .details_one {
+                    display: inline-block;
+                    width: 80px;
+                    /* border: solid white; */
+                }
+                .details_two {
+                    display: inline-block;
+                    /* text-decoration: none; */
+
+                }
+            }
+
+            .row1-col1-row2 {
+                height: max-content;
+                .row1-col1-row2-col1 {
+                    /* border: white dashed; */
+                    .skills {
+                        text-align: center;
+                        padding: 4% 0 3% 0;
+                    }
+                    .row1-col1-row2-col1-row1 {
+                        /* border: solid white; */
+                        .col-6 {
+                            /* border: solid chartreuse; */
+                            height: 50px;
+                            padding-bottom: 4%;
+                            .skill1 {
+                                height: 100%;
+                                display: inline-block;
+                            }
+                            p {
+                                display: inline;
+                                font-size: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .row1-col2 {
+            /* border: solid var(--matrix); */
+            padding-top: 5%;
+            p {
+                color: var(--matrix);
+            }
+        }
+    }
+}

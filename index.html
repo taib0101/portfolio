@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style1.css" type="text/css">
+    <link rel="stylesheet" href="./css/style2.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollSpy">
     <!-- navbar -->
     <div class="container-fluid container1">
         <div class="row row1 px-4 px-md-5">
@@ -21,13 +22,13 @@
 
             <!-- navber-menu -->
             <div class="col-8 row1-col2">
-                <div class="row row1-col2-row1">
+                <div id="myScrollSpy" class="row row1-col2-row1">
                     <div class="col-2 row1-col2-row1-col1"></div>
-                    <div class="col-2 row1-col2-row1-col2"><a href="#">Home</a></div>
-                    <div class="col-2 row1-col2-row1-col3"><a href="">About</a></div>
-                    <div class="col-2 row1-col2-row1-col4"><a href="">Resume</a></div>
-                    <div class="col-2 row1-col2-row1-col5"><a href="">Projects</a></div>
-                    <div class="col-2 row1-col2-row1-col6"><a href="">Contact</a></div>
+                    <div class="col-2 row1-col2-row1-col2"><a href="#home">Home</a></div>
+                    <div class="col-2 row1-col2-row1-col3"><a href="#about">About</a></div>
+                    <div class="col-2 row1-col2-row1-col4"><a href="#resume">Resume</a></div>
+                    <div class="col-2 row1-col2-row1-col5"><a href="#projects">Projects</a></div>
+                    <div class="col-2 row1-col2-row1-col6"><a href="#contact">Contact</a></div>
 
                 </div>
             </div>
@@ -55,11 +56,11 @@
 
                         <div class="row row1-col1-row1-col1-row2">
                             <div class="col-6 row1-col1-row1-col1-row2-col1">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Resume</a></li>
-                                <li><a href="">Projects</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#resume">Resume</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
 
                             </div>
                         </div>
@@ -72,48 +73,170 @@
     </div>
 
 
-    <div class="container-fluid container3">
-        <div class="row row1">
-            <canvas id="cmatrix" class="col-12 row1-col1">
-            </canvas>
-        </div>
+    <div data-bs-spy="scroll" data-bs-target="#myScrollSpy" style="position: relative;">
 
-        <div class="row row2">
-            <div class="col-12 row2-col1 px-4 px-md-5 lh-2">
-                <div>
-                    <p class="h5" style="color: rgb(21, 255, 0);font-weight: bolder;">Hello,</p>
-                </div>
-                <div>
-                    <p class="h1" style="color: white;display: inline-block;font-weight: bolder;">I'm </p>&nbsp;
-                    <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">Mustain Murtaza Taib</p>
-                </div>
-                <div>
-                    <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">$</p>
-                    <span class="h1" id="typingAnimation" style="color: white;display: inline-block;font-weight: bolder;"></span>
-                </div>
-                <div class="row row2-col1-row1 px-4 px-md-5">
-                    <div class="col-5 col-sm-3 btn-5">
-                        <a href="">Resume</a>
+        <div id="home" class="container-fluid container3">
+            <div class="row row1">
+                <canvas id="cmatrix" class="col-12 row1-col1">
+                </canvas>
+            </div>
+
+            <div class="row row2">
+                <div class="col-12 row2-col1 px-4 px-md-5 lh-2">
+                    <div>
+                        <p class="h5" style="color: rgb(21, 255, 0);font-weight: bolder;">Hello,</p>
                     </div>
+                    <div>
+                        <p class="h1" style="color: white;display: inline-block;font-weight: bolder;">I'm </p>&nbsp;
+                        <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">Mustain
+                            Murtaza Taib</p>
+                    </div>
+                    <div>
+                        <p class="h1" style="color: rgb(21, 255, 0);display: inline-block;font-weight: bolder;">$</p>
+                        <span class="h1" id="typingAnimation"
+                            style="color: white;display: inline-block;font-weight: bolder;"></span>
+                    </div>
+                    <div class="row row2-col1-row1 px-4 px-md-5">
+                        <div class="col-5 col-sm-3 btn-5">
+                            <a href="">Resume</a>
+                        </div>
 
-                    <div class="col-5 col-sm-3 btn-6">
-                        <a href="">Github</a>
+                        <div class="col-5 col-sm-3 btn-6">
+                            <a href="">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 row2-col2">
+                    <div class="row row2-col2-row1 justify-content-end">
+                        <img class="col-12 col-sm-10 col-md-8 col-lg-5 row2-col2-row1-col1" src="./asset/taib.png" alt="">
+
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-12 col-sm-4 row2-col2">
-                <img class="" src="./asset/taib.png" alt="">
+
+        <div id="about" class="container-fluid container4">
+            <div class="row row1">
+                <div class="col-12 col-md-6 row1-col1 ps-4 ps-md-5">
+                    <div class="row row1-col1-row1">
+                        <div class="col-12 row1-col1-row1-col1">
+                            <p class="h2 details">Details</p>
+                            <p class="h6"><span class="details_one">Name:</span> <span class="details_two">Mustain
+                                    Murtaza
+                                    Taib</span></p>
+                            <p class="h6"><span class="details_one">Title:</span> <span class="details_two">Full Stack
+                                    Developer</span></p>
+                            <p class="h6"><span class="details_one">Email:</span> <a
+                                    href="mailto:murtazataib01@gmail.com" class="details_two">murtazataib01@gmail.com
+                                </a></p>
+                            <p class="h6"><span class="details_one">Address: </span> <span
+                                    class="details_two">Mirpur,Dhaka,Bangladesh</span></p>
+                        </div>
+                    </div>
+
+                    <div class="row row1-col1-row2">
+                        <div class="col-12 row1-col1-row2-col1">
+                            <p class="h2 skills">Skills</p>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/js.png" alt="not found">
+                                    <p class="h5">JavaScript</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/react.png" alt="not found">
+                                    <p class="h5">React</p>
+                                </div>
+                            </div>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/node.png" alt="not found">
+                                    <p class="h5">NodeJs</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/postgres.png" alt="not found">
+                                    <p class="h5">Postgres</p>
+                                </div>
+                            </div>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/algo.png" alt="not found">
+                                    <p class="h5">Algorithm</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/ds.png" alt="not found">
+                                    <p class="h5">Data Structure</p>
+                                </div>
+                            </div>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/html.png" alt="not found">
+                                    <p class="h5">HTML</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/css.png" alt="not found">
+                                    <p class="h5">CSS</p>
+                                </div>
+                            </div>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/python.png" alt="not found">
+                                    <p class="h5">Python</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/cplus.png" alt="not found">
+                                    <p class="h5">C++</p>
+                                </div>
+                            </div>
+
+                            <div class="row row1-col1-row2-col1-row1">
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/linux.png" alt="not found">
+                                    <p class="h5">Linux</p>
+                                </div>
+                                <div class="col-6">
+                                    <img class="skill1" src="./asset/network.png" alt="not found">
+                                    <p class="h5">Networking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 row1-col2 ps-4 ps-md-5">
+                    <p class="h2 text-center">About</p>
+                    <p class="h5">I am eager to leverage my skills and experience to contribute to an organization as a
+                        full stack developer. I thrive in collaborative environments where I can continuously learn and
+                        apply new technologies to create innovative web applications.My technical expertise includes
+                        proficiency in HTML, CSS, React.js, Node.js, JavaScript, Linux commands, and bash scripting.
+                        Additionally, I have a solid understanding of basic networking concepts. Over the course of my
+                        career, I have solved over 600 competitive programming problems, which has honed my ability to
+                        write efficient and effective code.I have a passion for web development and extensive experience
+                        in both front-end and back-end technologies. With a strong foundation in data structures,
+                        algorithms, and competitive programming, I bring a problem-solving mindset to every project.</p>
+                </div>
             </div>
         </div>
+
+
+
     </div>
 
-    
-
 </body>
-<script src="https://kit.fontawesome.com/1fe9a2c7df.js" crossorigin="anonymous"></script>
 <script src="./script/cmatrix.js"></script>
+<script src="https://kit.fontawesome.com/1fe9a2c7df.js" crossorigin="anonymous"></script>
 <script src="./script/toggler.js"></script>
 <script src="./script/typingAnimation.js"></script>
-
+<script src="./script/bootstrap.bundle.js"></script>
+<script>
+    $('#myScrollSpy').scrollspy();
+    // $('body').scrollspy({ target: '#myScrollSpy' });
+    $(window).load();
+</script>
 </html>
