@@ -49,13 +49,13 @@
                     }
                     .row1-col1-row2-col1-row1 {
                         /* border: solid white; */
+                        padding-bottom: 5.5%;
                         .col-6 {
                             /* border: solid chartreuse; */
                             height: 50px;
-                            padding-bottom: 5%;
                             .skill1 {
-                                height: 200%;
-                                display: inline-block;
+                                height: 100%;
+                                display: inline;
                             }
                             p {
                                 display: inline;
