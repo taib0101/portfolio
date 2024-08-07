@@ -267,7 +267,7 @@ body {
         }
 
         .row2-col2 {
-            border: dashed red;
+            /* border: dashed red; */
             position: absolute;
             z-index: 89;
             top: 20%;
@@ -276,18 +276,15 @@ body {
 
             .row2-col2-row1 {
                 width: 42%;
-                border: var(--matrix) solid 2px;
-                .row2-col2-row1-col1 {
-                    height: 100%;
-
-                }
-            }
-            img {
-                /* border: solid blue; */
+                /* border: var(--matrix) solid 2px; */
                 height: 100%;
                 width: 100%;
-                filter: opacity(30%);
-                filter: blur(30%);
+                .row2-col2-row1-col1 {
+                    filter: opacity(30%);
+                    filter: blur(30%);
+                    /* border: dashed white; */
+                    height: 100%;
+                }
             }
         }
     }
