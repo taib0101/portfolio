@@ -321,3 +321,13 @@ body {
         }
     }
 }
+
+@media (max-width: 400px) {
+    .container3 {
+        .row2-col1-row1-col1 {
+            p,span {
+                font-size: 150%;
+            }
+        }
+    }
+}
