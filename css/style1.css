@@ -322,7 +322,7 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .container3 {
         .row2-col1-row1-col1 {
             p,span {
